@@ -12,7 +12,7 @@ contract Alchemy is ERC721, ERC721Enumerable, ERC721URIStorage {
     Counters.Counter private _tokenIdCounter;
     uint256 MAX_SUPPLY = 10000;
 
-    constructor() ERC721("Alchemy", "ALCH") {}
+    constructor() ERC721("ERC721", "ERC") {}
 
     function safeMint(address to, string memory uri) public {
         uint256 tokenId = _tokenIdCounter.current();
